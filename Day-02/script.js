@@ -13,3 +13,5 @@ if(number % 2 === 0){
 }else{
     console.log(number, "is an Odd Number");
 }
+
+//Done
