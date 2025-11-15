@@ -8,10 +8,28 @@
 
 let number = 2;
 
-if(number % 2 === 0){
-    console.log(number, "is an Even Number");
-}else{
-    console.log(number, "is an Odd Number");
-}
+// if(number % 2 === 0){
+//     console.log(number, "is an Even Number");
+// }else{
+//     console.log(number, "is an Odd Number");
+// }
 
-//Done
+// //Done
+
+// let number = 5 ;
+//  if (number > 0){
+//     console.log(number, "is a Positive Number");
+//  }else if (number < 0){
+//     console.log(number, "is a Negative Number");
+//  }else{
+//     console.log(number, "is Zero");
+//  }
+
+let weather = 30;
+if(weather >= 30){
+    console.log("It's a Hot Day");
+}else if(weather >= 20 && weather < 30){
+    console.log("It's a Warm Day");
+}else {
+    console.log("It's a Cold Day");
+}
