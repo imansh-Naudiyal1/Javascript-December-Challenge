@@ -25,11 +25,19 @@ let number = 2;
 //     console.log(number, "is Zero");
 //  }
 
-let weather = 30;
-if(weather >= 30){
-    console.log("It's a Hot Day");
-}else if(weather >= 20 && weather < 30){
-    console.log("It's a Warm Day");
-}else {
-    console.log("It's a Cold Day");
+// let weather = 30;
+// if(weather >= 30){
+//     console.log("It's a Hot Day");
+// }else if(weather >= 20 && weather < 30){
+//     console.log("It's a Warm Day");
+// }else {
+//     console.log("It's a Cold Day");
+// }
+
+let age = 19;
+let hasLicense = true;
+if ( age >= 18 && hasLicense){
+    console.log("You can Drive");
+}else{
+    console.log("you can'not Drive");
 }
