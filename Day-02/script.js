@@ -34,10 +34,25 @@ let number = 2;
 //     console.log("It's a Cold Day");
 // }
 
-let age = 19;
-let hasLicense = true;
-if ( age >= 18 && hasLicense){
-    console.log("You can Drive");
+// let age = 19;
+// let hasLicense = true;
+// if ( age >= 18 && hasLicense){
+//     console.log("You can Drive");
+// }else{
+//     console.log("you can'not Drive");
+// }
+ 
+// let isStudent = true;
+// let isSenior = false;
+// if( isStudent || isSenior){
+//     console.log("You get a Discount");
+// }else{
+//     console.log("No Discount for you");
+// }
+
+let isBanned = false;
+if(!isBanned){
+    console.log("You can Access the Website");
 }else{
-    console.log("you can'not Drive");
+    console.log("You are Banned from the Website");
 }
