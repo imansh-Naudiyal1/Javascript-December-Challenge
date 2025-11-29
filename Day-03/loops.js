@@ -36,8 +36,38 @@
 
 // Task4
 
-let table = 0;
-for ( let i = 1; i <= 10; i++ ) {
-   table = 5 * i;
-   console.log("5 x " + i + " = " + table);
-}
+// let table = 0;
+// for ( let i = 1; i <= 10; i++ ) {
+//    table = 5 * i;
+//    console.log("5 x " + i + " = " + table);
+// }
+
+// ✅ Q1 — Left Triangle Star Pattern
+
+
+// for(let i = 1; i <= 5; i++) {
+//     let row = '';
+//       for(let j = 1; j <= i; j++) { 
+//          row += '* ';
+//       }
+//     console.log(row);
+// }
+
+// // ✅ Q2 — Reverse Triangle Star Pattern
+// for (let i = 5 ; i >= 1;i--){
+//    let row = '';
+//    for (let j = 1; j <= i; j++){
+//       row += '* ';
+//    }
+//    console.log(row);
+// }
+
+// ✅ Q3 — Number Increasing Triangle Pattern
+
+// for (let i = 1; i <= 5; i++){
+//    let row = '';  
+//    for (let j = 1; j <= i; j++){
+//       row += j + ' ';
+//    }  
+//    console.log(row);
+// }
