@@ -1,0 +1,199 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        input[type="password"],
+        input[type="text"] {
+            width: 100%;
+            padding: 15px 50px 15px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        input[type="password"]:focus,
+        input[type="text"]:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+        }
+
+        .toggle-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-btn:hover {
+            color: #667eea;
+        }
+
+        .strength-meter {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .strength-bar {
+            height: 100%;
+            width: 0%;
+            transition: all 0.4s ease;
+            border-radius: 10px;
+        }
+
+        .strength-bar.weak {
+            width: 33.33%;
+            background: linear-gradient(90deg, #ff4757, #ff6348);
+        }
+
+        .strength-bar.medium {
+            width: 66.66%;
+            background: linear-gradient(90deg, #ffa502, #ffcc00);
+        }
+
+        .strength-bar.strong {
+            width: 100%;
+            background: linear-gradient(90deg, #26de81, #20bf6b);
+        }
+
+        .strength-text {
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 25px;
+            min-height: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .strength-text.weak {
+            color: #ff4757;
+        }
+
+        .strength-text.medium {
+            color: #ffa502;
+        }
+
+        .strength-text.strong {
+            color: #26de81;
+        }
+
+        .requirements {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .requirements h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .requirement {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .requirement:last-child {
+            margin-bottom: 0;
+        }
+
+        .requirement .icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .requirement.met {
+            color: #078d4a;
+        }
+
+        .requirement.met .icon {
+            background: #26de81;
+            border-color: #26de81;
+            color: white;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }

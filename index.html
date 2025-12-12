@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Password Strength Checker</h1>
+        <p class="subtitle">Create a secure password</p>
+
+        <div class="input-container">
+            <input type="password" id="passwordInput" placeholder="Enter your password">
+            <button class="toggle-btn" id="toggleBtn" aria-label="Toggle password visibility">👁️</button>
+        </div>
+
+        <div class="strength-meter">
+            <div class="strength-bar" id="strengthBar"></div>
+        </div>
+
+        <div class="strength-text" id="strengthText"></div>
+
+        <div class="requirements">
+            <h3>Password Requirements:</h3>
+            <div class="requirement" id="req-length">
+                <span class="icon">✔</span>
+                <span>At least 8 characters</span>
+            </div>
+            <div class="requirement" id="req-uppercase">
+                <span class="icon">✔</span>
+                <span>Contains uppercase letter</span>
+            </div>
+            <div class="requirement" id="req-number">
+                <span class="icon">✔</span>
+                <span>Contains a number</span>
+            </div>
+            <div class="requirement" id="req-special">
+                <span class="icon">✔</span>
+                <span>Contains special character (!@%^&*)</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
