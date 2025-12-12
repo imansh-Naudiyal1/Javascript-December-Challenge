@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Smart Notes</h1>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search notes...">
+        </div>
+
+        <!-- Add Note Form -->
+        <div class="add-note-card">
+            <h2>Add New Note</h2>
+            <form class="note-form">
+                <div class="form-group">
+                    <label for="note-title">Title</label>
+                    <input type="text" id="note-title" placeholder="Enter note title" required>
+                </div>
+                <div class="form-group">
+                    <label for="note-description">Description</label>
+                    <textarea id="note-description" rows="4" placeholder="Enter note description" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-add">Add Note</button>
+            </form>
+        </div>
+
+        <!-- Notes Grid -->
+        <div class="notes-grid">
+            <!-- Sample Note 1 -->
+            <div class="note-card">
+                <h3 class="note-title">Meeting Notes</h3>
+                <p class="note-description">Discussed project timeline and deliverables. Need to follow up with the team by Friday.</p>
+                <div class="note-actions">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </div>
+            </div>
+
+            <!-- Sample Note 2 -->
+            <div class="note-card">
+                <h3 class="note-title">Shopping List</h3>
+                <p class="note-description">Milk, eggs, bread, coffee, fruits, vegetables, and cleaning supplies.</p>
+                <div class="note-actions">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </div>
+            </div>
+
+            <!-- Sample Note 3 -->
+            <div class="note-card">
+                <h3 class="note-title">Book Ideas</h3>
+                <p class="note-description">Research topics for next chapter. Include historical references and contemporary examples.</p>
+                <div class="note-actions">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </div>
+            </div>
+
+            <!-- Sample Note 4 -->
+            <div class="note-card">
+                <h3 class="note-title">Workout Plan</h3>
+                <p class="note-description">Monday: Cardio 30min, Tuesday: Strength training, Wednesday: Yoga, Thursday: Rest day.</p>
+                <div class="note-actions">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </div>
+            </div>
+
+            <!-- Sample Note 5 -->
+            <div class="note-card">
+                <h3 class="note-title">Travel Plans</h3>
+                <p class="note-description">Book flights for December trip. Check hotel availability and plan itinerary for 5 days.</p>
+                <div class="note-actions">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </div>
+            </div>
+
+            <!-- Sample Note 6 -->
+            <div class="note-card">
+                <h3 class="note-title">Recipe: Pasta</h3>
+                <p class="note-description">Ingredients: pasta, tomatoes, garlic, olive oil, basil. Cook pasta al dente, sauté garlic, add tomatoes.</p>
+                <div class="note-actions">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
