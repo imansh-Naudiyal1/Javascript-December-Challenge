@@ -178,10 +178,10 @@
             transition: all 0.3s ease;
         }
 
-        .requirement.met {
+        .requirement.met::after {
             color: #078d4a;
         }
-
+    
         .requirement.met .icon {
             background: #26de81;
             border-color: #26de81;
